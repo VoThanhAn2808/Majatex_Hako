@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!-- <meta charset="UTF-8"> -->
+   <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>MAJATEX HAKO PRIMA</title>
+   <link rel="stylesheet" href="style.css" />
+
+   <!-- Bootstrap Links -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+   <!-- Bootstrap Links -->
+
+   <!-- Google Fonts Links -->
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
+   <!-- Google Fonts Links -->
+
+   <!-- Font Awesome Cdn -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+   <!-- Font Awesome Cdn -->
+</head>
+
+<body>
+   <!-- <navbar> -->
+   <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
+      <div class="container">
+         <a class="navbar-brand" href="index.html" id="logo">
+            <img src="images/logo1.png" alt="logo" class="logo" />
+            Majatex Hako Prima
+         </a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar"
+            aria-controls="mynavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span><i class="fa-solid fa-bars"></i></span>
+         </button>
+         <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+               <li class="nav-item">
+                  <a class="nav-link active" href="#home">Home</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#about_us">About us</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#product">Product</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#our_clients">Our clients</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#footer">Contact</a>
+               </li>
+               <li class="nav-item dropdown">
+                  <button class="btn btn-light dropdown-toggle" type="button" id="languageDropdown"
+                     data-bs-toggle="dropdown" aria-expanded="false">
+                     Language
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                     <li>
+                        <a class="dropdown-item" href="#" onclick="setLanguage('en')">English</a>
+                     </li>
+                     <li>
+                        <a class="dropdown-item" href="#" onclick="setLanguage('id')">Indonesian</a>
+                     </li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </nav>
+   <!-- <navbar> -->
+
+   <!-- <Home> -->
+   <div class="home" id="home"></div>
+   <!-- <Home> -->
+
+   <!-- About Us -->
+   <section class="about" id="about_us">
+      <div class="container">
+         <div class="main-txt" style="padding-top: 10px">
+            <h1 id="about-title">About Us</h1>
+         </div>
+         <div class="row" style="margin-top: 50px">
+            <div class="col-md-6 py-3 py-md-0" style="
+              display: flex;
+              flex-direction: column;
+              justify-content: flex-end;
+            ">
+               <p id="about-paragraph">
+                  MAJATEX HAKO PRIMA has been Indonesia's leading clothing
+                  manufacturer and a reliable garment export house since 1990. We
+                  produce a wide range of ready-to-wear garments using 100% cotton
+                  and cotton bamboo fabrics with Oeko-Tex Standard 100.
+               </p>
+               <button id="about-btn">Read More...</button>
+            </div>
+
+            <div class="col-md-6 py-3 py-md-0">
+               <div class="card">
+                  <img src="./images/about.png" alt="about" />
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Animation -->
+   <div class="container custom-padding">
+      <div class="row g-4 justify-content-center">
+         <div class="col-md-4">
+            <div class="star-card">
+               <div class="star-icon">
+                  <img src="./images/animation_1.png" alt="Factory Icon" />
+               </div>
+               <div class="star-text mt-3" id="experience-text">
+                  <span class="highlight counter" id="city-count">30</span>+
+                  Years<br />Industry Experience
+               </div>
+            </div>
+         </div>
+
+         <div class="col-md-4">
+            <div class="star-card">
+               <div class="star-icon">
+                  <img src="./images/animation_2.png" alt="Sewing Machine Icon" />
+               </div>
+               <div class="star-text mt-3" id="production-text">
+                  <span class="highlight counter" id="customer-count">100,000</span>+ Monthly Garment<br />Production
+                  Capacity.
+               </div>
+            </div>
+         </div>
+
+         <div class="col-md-4">
+            <div class="star-card">
+               <div class="star-icon">
+                  <img src="./images/animation_3.png" alt="T-shirt Icon" />
+               </div>
+               <div class="star-text mt-3" id="yearly-text">
+                  <span class="highlight counter" id="transaction-count">1,000,000</span>+ Garments<br />Produced in a
+                  Year.
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- Product -->
+   <section class="product" id="product">
+      <div class="container">
+         <div class="main-txt">
+            <h1 id="product-title">Product</h1>
+         </div>
+         <div class="row">
+            <div class="content-product">
+               <img src="images/product.png" alt="product" />
+               <a class="button-product">
+                  <button class="btn-product" id="product-btn">
+                     See more
+                     <i class="fas fa-angle-double-right"></i>
+                  </button>
+               </a>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Advantage -->
+   <section class="advantage" id="our_clients">
+      <div class="container">
+         <div class="main-txt">
+            <h1 id="advantage-title">Company Advantage</h1>
+            <p id="advantage-subtitle">
+               Majatex Hako Prima is proud to be a trusted manufacturing partner
+               for leading fashion brands in some of the world's most dynamic and
+               demanding markets, including the USA, Singapore, Dubai, Hong Kong,
+               Thailand, and beyond.
+            </p>
+         </div>
+         <div class="row">
+            <div class="col-md-3 text-center">
+               <div class="advantage-card">
+                  <div class="advantage-icon">
+                     <img src="images/advantage-1.png" alt="advantage" />
+                  </div>
+                  <div class="advantage-text">
+                     <h4 class="advantage-title" id="advantage-1-title">Over 30 Years of experience</h4>
+                     <p class="advantage-description" id="advantage-1-desc">
+                        Founded in 1990, we bring deep industry insight and a strong
+                        commitment to quality and continuous innovation.
+                     </p>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-md-3 text-center">
+               <div class="advantage-card">
+                  <div class="advantage-icon">
+                     <img src="images/advantage-2.png" alt="advantage" />
+                  </div>
+                  <div class="advantage-text">
+                     <h4 class="advantage-title" id="advantage-2-title">One-Stop Service</h4>
+                     <p class="advantage-description" id="advantage-2-desc">
+                        From design, material sourcing, production to packaging - our
+                        fully integrated process ensures efficiency and
+                        cost-effectiveness for our clients.
+                     </p>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-md-3 text-center">
+               <div class="advantage-card">
+                  <div class="advantage-icon">
+                     <img src="images/advantage-3.png" alt="advantage" />
+                  </div>
+                  <div class="advantage-text">
+                     <h4 class="advantage-title" id="advantage-3-title">Professional technical team</h4>
+                     <p class="advantage-description" id="advantage-3-desc">
+                        Equipped with over 10 advanced production lines, we have the
+                        capacity to fulfill large-volume orders with precision and
+                        competitive pricing.
+                     </p>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-md-3 text-center">
+               <div class="advantage-card">
+                  <div class="advantage-icon">
+                     <img src="images/advantage-4.png" alt="advantage" />
+                  </div>
+                  <div class="advantage-text">
+                     <h4 class="advantage-title" id="advantage-4-title">Inspection</h4>
+                     <p class="advantage-description" id="advantage-4-desc">
+                        Every product undergoes a thorough quality inspection before
+                        shipment to ensure it meets international standards and
+                        exceeds customer expectations.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Services -->
+   <section class="services" id="services">
+      <div class="container">
+         <div class="main-txt">
+            <h1 id="services-title">What Services We Offer?</h1>
+         </div>
+         <div class="services-card">
+            <img src="images/Services.png" alt="services" />
+         </div>
+      </div>
+   </section>
+
+   <!--Our Partners -->
+   <section class="our-partners" id="our-partners">
+      <div class="container">
+         <div class="main-txt">
+            <h1 id="partners-title">Our Partners</h1>
+         </div>
+         <div class="our-partners-text">
+            <p class="our-partners-text_st" id="partners-paragraph-1">
+               As a reputable leading clothing manufacturer, we take pride in being
+               a trusted production partner for clients around the globe. We have
+               collaborated on large-scale garment production with world-renowned
+               high-end fashion brands, best-selling retail fashion chains, local
+               fashion brands in various countries, OEM/ODM/custom clothing
+               companies, as well as numerous design studios, buying offices, and
+               apparel traders.
+            </p>
+            <p class="our-partners-text_nd" id="partners-paragraph-2">
+               Our diverse global partner network is a testament to our flexibility
+               in production, consistent quality, and ability to swiftly meet the
+               evolving demands of the fashion industry.
+            </p>
+         </div>
+         <div class="row">
+            <div class="col-lg-2 col-md-4 col-6" style="display: flex; align-items: center; justify-content: center">
+               <div class="our-partners-card">
+                  <img src="images/partners-nike.png" alt="marvel" />
+               </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6" style="display: flex; align-items: center; justify-content: center">
+               <div class="our-partners-card">
+                  <img src="images/partners-marvel.png" alt="marvel" />
+               </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6" style="display: flex; align-items: center; justify-content: center">
+               <div class="our-partners-card">
+                  <img src="images/partners-OIT.jpg" alt="marvel" />
+               </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6" style="display: flex; align-items: center; justify-content: center">
+               <div class="our-partners-card">
+                  <img src="images/partners-mickeymouse.png" alt="marvel" />
+               </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6" style="display: flex; align-items: center; justify-content: center">
+               <div class="our-partners-card">
+                  <img src="images/partners_matahari.png" alt="marvel" />
+               </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6" style="display: flex; align-items: center; justify-content: center">
+               <div class="our-partners-card">
+                  <img src="images/partners-nevada.png" alt="marvel" />
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Footer Start -->
+   <footer id="footer" class="footer">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-4">
+               <div class="footer-content">
+                  <h3>Contact Us</h3>
+                  <div class="footer-content-text">
+                     <p class="footer-content-text_st">
+                        Email:
+                        <a href="mailto:admin@majatex.biz">admin@majatex.biz</a>
+                     </p>
+                     <p class="footer-content-text_nd">Phone: +628112446735</p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="footer-content">
+                  <h3>Quick Link</h3>
+                  <ul class="footer-content-list">
+                     <li class="active">
+                        <a class="footer-active" href="#home">Home</a>
+                     </li>
+                     <li class="active">
+                        <a class="footer-active" href="#about_us">About us</a>
+                     </li>
+                     <li class="active">
+                        <a class="footer-active" href="#product"> Product </a>
+                     </li>
+                     <li class="active">
+                        <a class="footer-active" href="#our_clients">Our clients</a>
+                     </li>
+                     <li class="active">
+                        <a class="footer-active" href="#contact">Contact</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="footer-content">
+                  <iframe
+                     src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3960.388292469766!2d107.55877157499687!3d-6.963438193037035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwNTcnNDguNCJTIDEwN8KwMzMnNDAuOSJF!5e0!3m2!1sen!2s!4v1746863649088!5m2!1sen!2s"
+                     width="100%" height="250" style="border: 0" allowfullscreen="" loading="lazy"
+                     referrerpolicy="no-referrer-when-downgrade" class="footer-content-map"></iframe>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <!-- Footer End -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+   <script src="script.js"></script>
+   <script src="translateIndex.js"></script>
+</body>
+
+</html>

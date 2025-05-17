@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #A7D129;
+    border-radius: 10px;
+}
+
+html::-webkit-scrollbar {
+    width: 10px;
+}
+
+body {
+    background: #f9f9f9;
+}
+
+.custom-padding {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.main-txt h1 {
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 700;
+}
+
+/* Header Start */
+#navbar {
+    background: #f9f9f9;
+}
+
+#logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 5px;
+}
+
+.logo {
+    height: 57px;
+    width: 74px;
+    background-color: #A7D129;
+}
+
+@media (max-width: 768px) {
+    #logo {
+        font-size: 22px;
+        margin-bottom: 2px;
+    }
+
+    .logo {
+        height: 40px;
+        width: 50px;
+    }
+}
+
+
+.navbar-toggler span {
+    color: #A7D129;
+    outline: none;
+}
+
+.navbar-nav {
+    margin-left: 20px;
+}
+
+.nav-item .nav-link {
+    font-size: 16px;
+    font-weight: 550;
+    color: black;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+}
+
+.nav-item .nav-link:hover {
+    background: #A7D129;
+    color: white;
+}
+
+#navbar form button {
+    background: #A7D129;
+    color: white;
+    border: none;
+}
+
+/* Header End */
+
+/* Home Content Start   */
+.home {
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: scroll;
+    animation: bgChange 3s infinite alternate;
+}
+
+@keyframes bgChange {
+    0% {
+        background-image: url('./images/background_img1.png');
+    }
+
+    100% {
+        background-image: url('./images/background_img2.png');
+    }
+}
+
+@media (max-width: 850px) {
+    .home {
+        height: 30vh;
+        background-position: center center;
+        background-size: contain;
+    }
+}
+
+/* Home Content End   */
+
+/* Product */
+.product {
+    margin-bottom: 40px;
+}
+
+.product .main-txt p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 2;
+}
+
+.product .product-list li {
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.product-list li span {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+/* Representative */
+.Representative {
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Representative img {
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.Representative:hover img {
+    transform: scale(1.1);
+}
+
+/* Product Description */
+.product-description .main-txt h1 {
+    margin-bottom: 30px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+th,
+td {
+    border: 1px solid black !important;
+    padding: 7px;
+    vertical-align: top;
+}
+
+th {
+    width: 20%;
+}
+
+.product-description_card,
+.product-description_card-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+
+}
+
+/* Footer Start */
+.footer {
+    background-color: rgb(35, 35, 35);
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding-top: 20px;
+}
+
+.footer-content h3 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.footer-content p {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.footer-content-map {
+    margin-bottom: 30px;
+}
+
+.footer-active {
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+    text-decoration: none;
+    color: white;
+    padding: 2px;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.footer-active:hover {
+    background: #A7D129;
+    color: white;
+}

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- <meta charset="UTF-8"> -->
+  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MAJATEX HAKO PRIMA</title>
+  <link rel="stylesheet" href="product.css" />
+
+  <!-- Bootstrap Links -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <!-- Bootstrap Links -->
+
+  <!-- Google Fonts Links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
+  <!-- Google Fonts Links -->
+
+  <!-- Font Awesome Cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  <!-- Font Awesome Cdn -->
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
+      <div class="container">
+         <a class="navbar-brand" href="index.html" id="logo">
+            <img src="images/logo1.png" alt="logo" class="logo" />
+            Majatex Hako Prima
+         </a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar"
+            aria-controls="mynavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span><i class="fa-solid fa-bars"></i></span>
+         </button>
+         <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+               <li class="nav-item">
+                  <a class="nav-link active" href="#home">Home</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#about_us">About us</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#product">Product</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#our_clients">Our clients</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#footer">Contact</a>
+               </li>
+               <li class="nav-item dropdown">
+                  <button class="btn btn-light dropdown-toggle" type="button" id="languageDropdown"
+                     data-bs-toggle="dropdown" aria-expanded="false">
+                     Language
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                     <li>
+                        <a class="dropdown-item" href="#" onclick="setLanguage('en')">English</a>
+                     </li>
+                     <li>
+                        <a class="dropdown-item" href="#" onclick="setLanguage('id')">Indonesian</a>
+                     </li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </nav>
+  <!-- <navbar> -->
+
+  <!-- Home -->
+  <div class="home" id="home"></div>
+  <!-- ./Home -->
+
+  <!-- Product -->
+  <div class="product">
+    <div class="container">
+      <div class="row">
+        <div class="main-txt">
+          <h1 id="product_title">Product</h1>
+          <p id="product_text">
+            We offer a diverse selection of premium apparel for children,
+            women, and men, designed to meet international standards in both
+            style and quality.
+            </br>Our product range includes:
+          </p>
+        </div>
+        <div class="col-md-7">
+          <div class="card">
+            <img src="images/product/product.jpg" alt="product">
+          </div>
+        </div>
+        <div class="col-md-5">
+          <ul class="product-list">
+            <li class="product_st" id="product_st">
+              <span>Children’s Wear:</span> Soft, safe, and breathable clothing for babies, kids, and teens – designed
+              with gentle fabrics that protect delicate skin.
+            </li>
+            <li class="product_nd" id="product_nd">
+              <span>Women’s Wear:</span> Stylish tops, dresses, loungewear, activewear, and more.
+            </li>
+            <li class="product_rd" id="product_rd">
+              <span>Men’s Wear:</span> Versatile everyday essentials, from casual T-shirts to outerwear.
+            </li>
+            <li class="product_th" id="product_th">
+              <span>Unisex Basics:</span> High-quality wardrobe staples suitable for all.
+            </li>
+            <li class="product_fr" id="product_fr">
+              <span>Custom Orders:</span> OEM & ODM services tailored to your brand’s needs.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ./Product -->
+  <!-- Representative -->
+  <div class="container">
+    <div class="row" style="margin-bottom: 30px;">
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="Representative">
+          <img src="images/product/product_1.jpg" alt="product_1" height="230px">
+        </div>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="Representative">
+          <img src="images/product/product_2.jpg" alt="product_2" height="230px">
+        </div>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="Representative">
+          <img src="images/product/product_3.jpg" alt="product_3" height="230px" width="230px">
+        </div>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="Representative">
+          <img src="images/product/product_4.jpg" alt="product_4" height="230px">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="Representative">
+          <img src="images/product/product_5.jpg" alt="product_5" height="230px">
+        </div>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="Representative">
+          <img src="images/product/product_6.jpg" alt="product_6" height="230px">
+        </div>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="Representative">
+          <img src="images/product/product_7.jpg" alt="product_7" height="230px">
+        </div>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="Representative">
+          <img src="images/product/product_8.jpg" alt="product_8" height="230px">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ./Representative -->
+  <!-- Product Description -->
+  <section class="product-description">
+    <div class="container">
+      <div class="row">
+        <div class="main-txt">
+          <h1>Product Description</h1>
+        </div>
+        <div class="col-md-12">
+          <table>
+            <tr>
+              <th>Item</th>
+              <th>Details</th>
+            </tr>
+            <tr>
+              <td>Logo</td>
+              <td>Can be customized</td>
+            </tr>
+            <tr>
+              <td>Fabric</td>
+              <td>
+                -100% Cotton</br>-100% bamboo cotton
+              </td>
+            </tr>
+            <tr>
+              <td>MOQ</td>
+              <td>
+                Sample: 1 piece</br>Custom order: 100 pieces
+              </td>
+            </tr>
+            <tr>
+              <td>Supplier</td>
+              <td>We have a factory in Bandung, Indonesia</td>
+            </tr>
+            <tr>
+              <td>Supply Ability</td>
+              <td>100,000 Pieces / Month</td>
+            </tr>
+            <tr>
+              <td>Custom Size</td>
+              <td>European size, USA size, Asian size</td>
+            </tr>
+            <tr>
+              <td>Payment</td>
+              <td>Western Union, T/T, Moneygram, PayPal, Alipay</td>
+            </tr>
+            <tr>
+              <td>Packing Details</td>
+              <td>1 pc in a poly bag, carton is available upon request</td>
+            </tr>
+            <tr>
+              <td>Delivery</td>
+              <td>DHL / UPS / FedEx / TNT / EMS / By sea / By air / etc.</td>
+            </tr>
+            <tr>
+              <td>Sample Time</td>
+              <td>
+                1–3 days for blank shirts</br>
+                2–5 days for Heat Transfer / Hot Sizing / Gold & Silver Ironing</br>
+                3–7 days for Embroidery / Screen Printing / AOP</br>
+                For customized colors or fabrics: usually 5–15 days (contact for details)
+              </td>
+            </tr>
+            <tr>
+              <td>Sample</td>
+              <td>Send Inquiry for Custom Free Sample</td>
+            </tr>
+          </table>
+        </div>
+        <div class="col-md-12">
+          <div class="product-description_card">
+            <img src="images/product/card.png" alt="card">
+          </div>
+          <div class="product-description_card-info">
+            <img src="images/product/card_info.png" alt="card_info">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ./Product Description -->
+  <!-- Footer Start -->
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="footer-content">
+            <h3>Contact Us</h3>
+            <div class="footer-content-text">
+              <p class="footer-content-text_st">Email: <a href="mailto:admin@majatex.biz">admin@majatex.biz</a>
+              </p>
+              <p class="footer-content-text_nd">Phone: +628112446735</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="footer-content">
+            <h3>Quick Link</h3>
+            <ul class="footer-content-list">
+              <li class="active">
+                <a class="footer-active" href="#home">Home</a>
+              </li>
+              <li class="active">
+                <a class="footer-active" href="#about_us">About us</a>
+              </li>
+              <li class="active">
+                <a class="footer-active" href="#product">
+                  Product
+                </a>
+              </li>
+              <li class="active">
+                <a class="footer-active" href="#our_clients">Our clients</a>
+              </li>
+              <li class="active">
+                <a class="footer-active" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="footer-content">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3960.388292469766!2d107.55877157499687!3d-6.963438193037035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwNTcnNDguNCJTIDEwN8KwMzMnNDAuOSJF!5e0!3m2!1sen!2s!4v1746863649088!5m2!1sen!2s"
+              width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade" class="footer-content-map"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer End -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+      <script src="translateProduct.js"></script>
+</body>
+
+</html>

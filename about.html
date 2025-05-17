@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- <meta charset="UTF-8"> -->
+  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MAJATEX HAKO PRIMA</title>
+  <link rel="stylesheet" href="about.css" />
+
+  <!-- Bootstrap Links -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <!-- Bootstrap Links -->
+
+  <!-- Google Fonts Links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
+  <!-- Google Fonts Links -->
+
+  <!-- Font Awesome Cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  <!-- Font Awesome Cdn -->
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
+      <div class="container">
+         <a class="navbar-brand" href="index.html" id="logo">
+            <img src="images/logo1.png" alt="logo" class="logo" />
+            Majatex Hako Prima
+         </a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar"
+            aria-controls="mynavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span><i class="fa-solid fa-bars"></i></span>
+         </button>
+         <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+               <li class="nav-item">
+                  <a class="nav-link active" href="#home">Home</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#about_us">About us</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#product">Product</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#our_clients">Our clients</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#footer">Contact</a>
+               </li>
+               <li class="nav-item dropdown">
+                  <button class="btn btn-light dropdown-toggle" type="button" id="languageDropdown"
+                     data-bs-toggle="dropdown" aria-expanded="false">
+                     Language
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                     <li>
+                        <a class="dropdown-item" href="#" onclick="setLanguage('en')">English</a>
+                     </li>
+                     <li>
+                        <a class="dropdown-item" href="#" onclick="setLanguage('id')">Indonesian</a>
+                     </li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </nav>
+  <!-- <navbar> -->
+
+  <!-- Home -->
+  <div class="home" id="home"></div>
+  <!-- ./Home -->
+
+  <!-- Overview -->
+  <div class="overview">
+    <div class="container">
+      <div class="row">
+        <div class="main-txt">
+          <h1 id="overview_title">Company Overview</h1>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <img src="images/about/building.jpg" alt="building" />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <p class="overview-text" id="overview_text">
+            Established in 1990, Majatex Hako Prima has evolved into a
+            prominent name in the garment manufacturing industry, specializing
+            in high-quality cotton and cotton-bamboo apparel. We focus on
+            crafting premium garments tailored for the export market, catering
+            to the exacting standards of international clients. Renowned for
+            our durable, breathable, and luxuriously soft cotton garments, we
+            have successfully expanded our footprint beyond Indonesia,
+            exporting to key markets including the USA, Dubai, Singapore,
+            Thailand, and Hong Kong. Our sustained growth is fueled by an
+            unwavering commitment to quality, continuous innovation, and
+            exceptional customer satisfaction.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ./Overview -->
+
+  <!--  Our Clients-->
+  <div class="ourclients">
+    <div class="container">
+      <div class="row">
+        <div class="main-txt">
+          <h1 id="ourclients_title">Our Clients</h1>
+        </div>
+        <div class="col-md-6">
+          <div class="ourclients-card_st">
+            <h3 id="ourclients_title_1">Our Mission</h3>
+            <p class="ourclients-text" id="ourclients_text_1">
+              Empower our staff to deliver a premium fashion manufacturing
+              experience that is both trendy and grounded in sustainable
+              practices and leading technologies to maximize customer
+              satisfaction and shareholder value.
+            </p>
+          </div>
+          <div class="ourclients-card_nd">
+            <h3 id="ourclients_title_2">Our Values</h3>
+            <p class="ourclients-text" id="ourclients_text_2">
+              Human dignity balanced with successful business for our
+              customers and stakeholders.
+            </p>
+          </div>
+          <div class="ourclients-card_rd">
+            <h3 id="ourclients_title_3">Our Vision</h3>
+            <p class="ourclients-text" id="ourclients_text_3">
+              We are driven by our knowledgeable, strong, and confident staff
+              to be the global leader in fashion supply chain management,
+              integrated with cutting-edge AI and sustainable practices.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <img src="images/about/Our.jpg" alt="our" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ./Our Clients -->
+  <!-- Machinery -->
+  <div class="machinery">
+    <div class="container">
+      <div class="row">
+        <div class="main-txt">
+          <h1 id="machinery_title">Machinery & Technology</h1>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <img src="images/about/machinery.jpg" alt="machinery" />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <p class="machinery-text" id="machinery_text">
+            At Majatex Hako Prima, we use cutting-edge sewing machines to
+            ensure precision, speed, and consistency in every garment.
+            Operated by skilled professionals and supported by strict quality
+            control, our technology guarantees international-standard results
+            from the first cut to the final stitch.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ./Machinery -->
+  <!-- Global-Apparel -->
+  <div class="globalApparel">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12" style="display: flex; justify-content: center; align-items: center">
+          <img src="images/about/Global-Apparel.jpg" alt="Global-Apparel" class="img-fluid" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ./Global-Apparel -->
+  <!-- Footer Start -->
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="footer-content">
+            <h3>Contact Us</h3>
+            <div class="footer-content-text">
+              <p class="footer-content-text_st">
+                Email:
+                <a href="mailto:admin@majatex.biz">admin@majatex.biz</a>
+              </p>
+              <p class="footer-content-text_nd">Phone: +628112446735</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="footer-content">
+            <h3>Quick Link</h3>
+            <ul class="footer-content-list">
+              <li class="active">
+                <a class="footer-active" href="#home">Home</a>
+              </li>
+              <li class="active">
+                <a class="footer-active" href="#about_us">About us</a>
+              </li>
+              <li class="active">
+                <a class="footer-active" href="#product"> Product </a>
+              </li>
+              <li class="active">
+                <a class="footer-active" href="#our_clients">Our clients</a>
+              </li>
+              <li class="active">
+                <a class="footer-active" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="footer-content">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3960.388292469766!2d107.55877157499687!3d-6.963438193037035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwNTcnNDguNCJTIDEwN8KwMzMnNDAuOSJF!5e0!3m2!1sen!2s!4v1746863649088!5m2!1sen!2s"
+              width="100%" height="250" style="border: 0" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade" class="footer-content-map"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer End -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+    <script src="translateAbout.js"></script>
+</body>
+
+</html>
