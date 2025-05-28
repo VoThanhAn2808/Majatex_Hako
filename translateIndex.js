@@ -1,11 +1,11 @@
 const translations = {
     en: {
-        home: "Home",
-        about_us: "About us",
-        product: "Product",
-        our_clients: "Our clients",
-        contact: "Contact",
-        language: "Language",
+        home_nav: "Home",
+        about_nav: "About us",
+        product_nav: "Product",
+        ourClients_nav: "Our clients",
+        contact_nav: "Contact",
+        language: "English",
         // About Us   
         about_title: "About Us",
         about_paragraph:
@@ -46,11 +46,11 @@ const translations = {
 
     },
     id: {
-        home: "Beranda",
-        about_us: "Tentang Kami",
-        product: "Produk",
-        our_clients: "Klien Kami",
-        contact: "Kontak",
+        home_nav: "Beranda",
+        about_nav: "Tentang Kami",
+        product_nav: "Produk",
+        ourClients_nav: "Klien Kami",
+        contact_nav: "Kontak",
         language: "Bahasa",
         // About Us   
         about_title: "Tentang Kami",
@@ -86,11 +86,11 @@ const translations = {
 
 function setLanguage(lang) {
     // Navbar
-    document.querySelector('a[href="#home"]').textContent = translations[lang].home;
-    document.querySelector('a[href="#about_us"]').textContent = translations[lang].about_us;
-    document.querySelector('a[href="#product"]').textContent = translations[lang].product;
-    document.querySelector('a[href="#our_clients"]').textContent = translations[lang].our_clients;
-    document.querySelector('a[href="#footer"]').textContent = translations[lang].contact;
+   document.querySelectorAll('.home_nav').forEach(el => el.textContent = translations[lang].home_nav);
+    document.querySelectorAll('.about_nav').forEach(el => el.textContent = translations[lang].about_nav);
+    document.querySelectorAll('.product_nav').forEach(el => el.textContent = translations[lang].product_nav);
+    document.querySelectorAll('.ourClients_nav').forEach(el => el.textContent = translations[lang].ourClients_nav);
+    document.querySelectorAll('.contact_nav').forEach(el => el.textContent = translations[lang].contact_nav);
     document.getElementById('languageDropdown').textContent = translations[lang].language;
 
     // About Us section

@@ -1,11 +1,11 @@
 const translations = {
     en: {
-        home: "Home",
-        about_us: "About us",
-        product: "Product",
-        our_clients: "Our clients",
-        contact: "Contact",
-        language: "Language",
+        home_nav: "Home",
+        about_nav: "About us",
+        product_nav: "Product",
+        ourClients_nav: "Our clients",
+        contact_nav: "Contact",
+        language: "English",
         overview_title: "Company Overview",
         overview_text: `Established in 1990, Majatex Hako Prima has evolved into a
         prominent name in the garment manufacturing industry, specializing
@@ -29,11 +29,11 @@ const translations = {
         machinery_text: "At Majatex Hako Prima, we use cutting-edge sewing machines to ensure precision, speed, and consistency in every garment. Operated by skilled professionals and supported by strict quality control, our technology guarantees international-standard results from the first cut to the final stitch.",
     },
     id: {
-        home: "Beranda",
-        about_us: "Tentang Kami",
-        product: "Produk",
-        our_clients: "Klien Kami",
-        contact: "Kontak",
+        home_nav: "Beranda",
+        about_nav: "Tentang Kami",
+        product_nav: "Produk",
+        ourClients_nav: "Klien Kami",
+        contact_nav: "Kontak",
         language: "Bahasa",
         overview_title: "Profil Perusahaan",
         overview_text: `Didirikan pada tahun 1990, Majatex Hako Prima telah berkembang menjadi salah satu nama terkemuka dalam industri manufaktur pakaian, dengan spesialisasi pada produk pakaian berkualitas tinggi dari bahan katun dan katun-bambu. Kami berfokus pada pembuatan pakaian premium yang dirancang untuk pasar ekspor dan pasar domestik, dengan standar tinggi sesuai dengan kebutuhan klien internasional dan nasional.
@@ -52,11 +52,11 @@ const translations = {
 
 function setLanguage(lang) {
     // Navbar
-    document.querySelector('a[href="#home"]').textContent = translations[lang].home;
-    document.querySelector('a[href="#about_us"]').textContent = translations[lang].about_us;
-    document.querySelector('a[href="#product"]').textContent = translations[lang].product;
-    document.querySelector('a[href="#our_clients"]').textContent = translations[lang].our_clients;
-    document.querySelector('a[href="#footer"]').textContent = translations[lang].contact;
+    document.querySelectorAll('.home_nav').forEach(el => el.textContent = translations[lang].home_nav);
+    document.querySelectorAll('.about_nav').forEach(el => el.textContent = translations[lang].about_nav);
+    document.querySelectorAll('.product_nav').forEach(el => el.textContent = translations[lang].product_nav);
+    document.querySelectorAll('.ourClients_nav').forEach(el => el.textContent = translations[lang].ourClients_nav);
+    document.querySelectorAll('.contact_nav').forEach(el => el.textContent = translations[lang].contact_nav);
     document.getElementById('languageDropdown').textContent = translations[lang].language;
     
     document.getElementById('overview_title').textContent = translations[lang].overview_title;

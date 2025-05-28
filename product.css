@@ -192,7 +192,8 @@ th {
 }
 
 .product-description_card,
-.product-description_card-info {
+.product-description_card-info,
+.product-description_certificate {
     display: flex;
     justify-content: center;
     align-items: center;

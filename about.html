@@ -26,50 +26,50 @@
 
 <body>
   <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
-      <div class="container">
-         <a class="navbar-brand" href="index.html" id="logo">
-            <img src="images/logo1.png" alt="logo" class="logo" />
-            Majatex Hako Prima
-         </a>
-         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar"
-            aria-controls="mynavbar" aria-expanded="false" aria-label="Toggle navigation">
-            <span><i class="fa-solid fa-bars"></i></span>
-         </button>
-         <div class="collapse navbar-collapse" id="mynavbar">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-               <li class="nav-item">
-                  <a class="nav-link active" href="#home">Home</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="#about_us">About us</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="#product">Product</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="#our_clients">Our clients</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="#footer">Contact</a>
-               </li>
-               <li class="nav-item dropdown">
-                  <button class="btn btn-light dropdown-toggle" type="button" id="languageDropdown"
-                     data-bs-toggle="dropdown" aria-expanded="false">
-                     Language
-                  </button>
-                  <ul class="dropdown-menu" aria-labelledby="languageDropdown">
-                     <li>
-                        <a class="dropdown-item" href="#" onclick="setLanguage('en')">English</a>
-                     </li>
-                     <li>
-                        <a class="dropdown-item" href="#" onclick="setLanguage('id')">Indonesian</a>
-                     </li>
-                  </ul>
-               </li>
+    <div class="container">
+      <a class="navbar-brand" href="index.html" id="logo">
+        <img src="images/logo1.png" alt="logo" class="logo" />
+        Majatex Hako Prima
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar"
+        aria-controls="mynavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fa-solid fa-bars"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active home_nav" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link about_nav" href="about.html">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link product_nav" href="product.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ourClients_nav" href="#our_clients">Our clients</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link contact_nav" href="#footer">Contact</a>
+          </li>
+          <li class="nav-item dropdown">
+            <button class="btn btn-light dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Language
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+              <li>
+                <a class="dropdown-item" href="#" onclick="setLanguage('en')">English</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#" onclick="setLanguage('id')">Bahasa</a>
+              </li>
             </ul>
-         </div>
+          </li>
+        </ul>
       </div>
-   </nav>
+    </div>
+  </nav>
   <!-- <navbar> -->
 
   <!-- Home -->
@@ -207,19 +207,19 @@
             <h3>Quick Link</h3>
             <ul class="footer-content-list">
               <li class="active">
-                <a class="footer-active" href="#home">Home</a>
+                <a class="footer-active home_nav" href="index.html">Home</a>
               </li>
               <li class="active">
-                <a class="footer-active" href="#about_us">About us</a>
+                <a class="footer-active about_nav" href="about.html">About us</a>
               </li>
               <li class="active">
-                <a class="footer-active" href="#product"> Product </a>
+                <a class="footer-active product_nav" href="product.html"> Product </a>
               </li>
               <li class="active">
-                <a class="footer-active" href="#our_clients">Our clients</a>
+                <a class="footer-active ourClients_nav" href="#our_clients">Our clients</a>
               </li>
               <li class="active">
-                <a class="footer-active" href="#contact">Contact</a>
+                <a class="footer-active contact_nav" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -236,10 +236,10 @@
     </div>
   </footer>
   <!-- Footer End -->
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"></script>
-    <script src="translateAbout.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="translateAbout.js"></script>
 </body>
 
 </html>
