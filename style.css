@@ -650,39 +650,39 @@ body{
 /* Mobile Responsive (max-width: 576px) */
 @media (max-width: 576px) {
   .footer .row {
-    flex-wrap: wrap;
-    flex-direction: row;
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
-  .footer .col-md-4 {
+  /* Hai cột đầu mỗi cột chiếm 48% */
+  .footer .col-md-4:nth-child(1),
+  .footer .col-md-4:nth-child(2) {
     flex: 0 0 48%;
     max-width: 48%;
   }
-  
-  .footer .col-md-4:last-child {
+
+  /* Cột map chiếm toàn bộ hàng */
+  .footer .col-md-4:nth-child(3) {
     flex: 0 0 100%;
     max-width: 100%;
   }
 
+  .footer-content {
+    align-items: flex-start; /* Căn trái nội dung thay vì center */
+    text-align: left;
+  }
+
   .footer-content h3 {
-    font-size: 26px;
-    margin-bottom: 20px;
+    font-size: 24px;
+    margin-bottom: 10px;
   }
 
-  .footer-content p {
-    font-size: 16px;
-    padding: 0 10px;
-  }
-
-  .footer-content-map {
-    margin-bottom: 20px;
-  }
-
+  .footer-content p,
+  .footer-content a,
   .footer-active {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
+
 /* Footer End */
