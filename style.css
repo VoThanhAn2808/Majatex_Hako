@@ -649,6 +649,24 @@ body{
 
 /* Mobile Responsive (max-width: 576px) */
 @media (max-width: 576px) {
+  .footer .row {
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .footer .col-md-4 {
+    flex: 0 0 48%;
+    max-width: 48%;
+  }
+  
+  .footer .col-md-4:last-child {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
   .footer-content h3 {
     font-size: 26px;
     margin-bottom: 20px;
